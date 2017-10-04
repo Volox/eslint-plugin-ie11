@@ -1,36 +1,32 @@
 # Cannot use WeakMap or WeakSet (IE11 compatibility) (no-weak-collections)
 
-Please describe the origin of the rule here.
+WeakMap and WeakSet are poorly supported in IE11.
 
 
 ## Rule Details
 
-This rule aims to...
+This rule aims to aviod usage of those built-in collections.
 
 Examples of **incorrect** code for this rule:
 
 ```js
-
-// fill me in
-
+const map = new WeakMap();
+const set = new WeakSet();
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-
-// fill me in
-
+const map = new Map();
+const set = new Set();
 ```
-
-### Options
-
-If there are any options, describe them here. Otherwise, delete this section.
 
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
+If you care supporting `WeakMap` in your code.
 
 ## Further Reading
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+WeakMap support: http://kangax.github.io/compat-table/es6/#test-WeakMap
+WeakSet support: http://kangax.github.io/compat-table/es6/#test-WeakSet
+
