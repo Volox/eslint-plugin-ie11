@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ie11",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "ESLint plugin for detecting unsupported ES6 features in IE11",
   "keywords": [
     "eslint",
@@ -10,17 +10,29 @@
   "author": "Volox",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
     "eslint": "4.x",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "semantic-release": "^8.0.3"
   },
   "engines": {
     "node": ">=8.0.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Volox/esint-plugin-ie11.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
