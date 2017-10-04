@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-ie11",
+  "version": "0.1.0",
+  "description": "ESLint plugin for detecting unsupported ES6 features in IE11",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Volox",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "4.x",
+    "mocha": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "ISC"
+}
