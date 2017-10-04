@@ -28,7 +28,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Volox/esint-plugin-ie11.git"
+    "url": "https://github.com/Volox/eslint-plugin-ie11.git"
   },
   "config": {
     "commitizen": {
