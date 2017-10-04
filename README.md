@@ -2,6 +2,8 @@
 
 ESLint plugin for detecting unsupported ES6 features in IE11
 
+[![Build Status](https://travis-ci.org/Volox/esint-plugin-ie11.svg?branch=master)](https://travis-ci.org/Volox/esint-plugin-ie11)
+
 ## Installation
 
 You'll first need to install [ESLint](http://eslint.org):
