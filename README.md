@@ -39,16 +39,18 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-				"ie11/no-collection-args": [ "error" ],
-				"ie11/no-for-in-const": [ "error" ],
-				"ie11/no-loop-func": [ "warn" ],
-				"ie11/no-weak-collections": [ "error" ]
+        "ie11/no-array-from": [ "error" ],
+        "ie11/no-collection-args": [ "error" ],
+        "ie11/no-for-in-const": [ "error" ],
+        "ie11/no-loop-func": [ "warn" ],
+        "ie11/no-weak-collections": [ "error" ]
     }
 }
 ```
 
 ## Supported Rules
 
+* no-array-from: Array.from is not implemented
 * no-collection-args: Map and Set constructors does not accept arguments.
 * no-for-in-const: Do not use const in for-in.
 * no-loop-func: So not create functions inside loops.
