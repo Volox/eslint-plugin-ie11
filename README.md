@@ -7,7 +7,7 @@ ESLint plugin for detecting unsupported ES6 features in IE11
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org):
+You'll first need to install [ESLint](https://eslint.org):
 
 ```
 $ npm i eslint --save-dev
